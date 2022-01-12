@@ -1,0 +1,17 @@
+<ol class="post-list">
+  {{!-- loops through each post; "as |post|" declares post as the variable name for subsequent placeholders --}}
+  {{#each posts as |post|}}
+  <li>
+    <article class="post">
+      <div class="title">
+        <a href="{{post_content}}" target="_blank">{{title}}</a>
+        <p>{{post_content}}</p>
+      </div>
+      <div class="meta">
+        <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+      </div>
+    </article>
+  </li>
+  {{!-- ends the loop --}}
+  {{/each}}
+</ol>
