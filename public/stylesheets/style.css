@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    background-color: lightgray;
   }
   
   body, html {
@@ -12,20 +13,20 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: darkolivegreen;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: olive;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: darkgrey;
     border: 0;
     padding: 1%;
-    color: white;
+    color: black;
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
@@ -33,28 +34,28 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: olive;
   }
   
   .post-list {
     margin: 0;
     padding: 0;
   }
+   
+  textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
   
   textarea, input {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid darkgray;
   }
   
   textarea:focus, input:focus {
     outline: none;
     border: 1px solid #3486eb;
-  }
-  
-  textarea {
-    min-width: 40%;
-    min-height: 100px;
   }
   
   form > div {
@@ -75,11 +76,12 @@
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid darkolivegreen;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
+    color:darkolivegreen;
   }
   
   header h1 {
@@ -88,7 +90,8 @@
   
   main {
     flex: 1;
-    padding: 2% 4%;
+    padding: 2% 10%;
+    justify-content: center;
   }
   
   .btn-no-style {
@@ -97,7 +100,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: darkolivegreen;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -106,15 +109,15 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: olive;
   }
   
   .delete-post-btn {
-    background-color: #d41414;
+    background-color: darkred;
   }
   
   .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: red;
   }
   
   .post {
@@ -161,7 +164,7 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    border-top: 2px solid darkgrey;
     display: flex;
     justify-content: center;
     padding: 1%;
